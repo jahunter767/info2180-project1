@@ -1,7 +1,25 @@
 /* Add your CSS to this file */
+:root {
+    --default-font: -apple-system, BlinkMacSystemFont, "SegoeUI", Roboto, "HelveticaNeue", Arial, "NotoSans", sans-serif;
+    --default-font-size: 18px
+}
+
 body {
     margin: 0;
-    font-size: 16px;
+    font-family: var(--default-font);
+    font-size: var(--default-font-size);
+}
+
+body img {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+header {
+    background-color: #FFFFFF;
 }
 
 .container {
@@ -9,3 +27,92 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+header > .container {
+    display: flex;
+}
+
+header > .container nav ul {
+    display: flex;
+}
+
+header > .container nav ul > li {
+    list-style: none;
+}
+
+.overview-hero > .container {
+    display: flex;
+}
+
+.learn-about > .container > .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.learn-about > .container > .cards > .card {
+    text-align: center;
+}
+
+.learn-about > .container > .cards > .card > img {
+    max-height: 150px;
+}
+
+.testing > .container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.stories > .container > article {
+    display: flex;
+}
+
+.newsletter > .container {
+    text-align: center;
+}
+
+.newsletter > .container > form {
+    display: flex;
+}
+
+/*
+Ensure you set appropriate margin/padding values to your design to give the
+    content some room to breathe
+
+
+nav links colour = #6B7280
+nav links hover colour = #5A67D8
+hint try using :hover pseudo selector
+
+Hero overview bg colour = #E2E8F0
+
+h2 in "learn about" text size = 24px
+h2 in "learn about" colour = #48BB78
+
+"learn about" cards border colour = E2E8F0
+corners rounded by 5px
+slight shadow (hint try using box-shadow property)
+
+h3 in card grid for "Learn About":
+colour = #48BB78
+font size = 21px
+
+Covid-19 Testinf Section:
+bg colour = #4A5568
+text colour = white
+link to "Learn more" bg colour = #48BB78
+link to "Learn more" rounded corners = 5px
+
+"Recent Stories":
+main heading and links colour = #5A67D8
+title for each story size = 18px
+circular images (use border-radius)
+
+Newsletter:
+bg colour = #48BB78
+text colour = white
+Subscribe button bg colour = #5A67D8
+
+Footer:
+bg colour = #4A5568
+text colour = white
+*/
