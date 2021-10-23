@@ -30,18 +30,42 @@ header {
 
 header > .container {
     display: flex;
+    justify-content: space-around;
 }
 
-header > .container nav ul {
+header > .container > nav > ul {
     display: flex;
 }
 
-header > .container nav ul > li {
+header > .container > h1 {
+    font-size: 18px;
+}
+
+header > .container > nav > ul > li {
     list-style: none;
+    margin: 10px;
+}
+
+header > .container > nav a {
+    color: #6B7280;
+}
+
+header > .container > nav a:hover {
+    color: #5A67D8;
 }
 
 .overview-hero > .container {
     display: flex;
+    justify-content: space-between;
+    background-color: #E2E8F0;
+}
+
+.overview-hero > .container > .overview-hero-image {
+    margin: 50px 25px 50px 100px;
+}
+
+.overview-hero > .container > .overview-hero-text {
+    margin: 50px 100px 50px 25px;
 }
 
 .learn-about > .container > .cards {
@@ -49,70 +73,99 @@ header > .container nav ul > li {
     grid-template-columns: repeat(3, 33%);
 }
 
-.learn-about > .container > .cards > .card {
-    text-align: center;
-}
-
 .learn-about > .container > .cards > .card > img {
     max-height: 150px;
 }
 
+.learn-about > .container h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.learn-about > .container h3 {
+    color: #48BB78;
+    font-size: 21px;
+}
+
+.learn-about > .container > .cards > .card {
+    margin: 20px;
+    text-align: center;
+    border-color: #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 3px 3px #C3C4C6;
+}
+
+/*
+.learn-about > .container > .cards > .card {
+    margin: 5px;
+}
+*/
+
 .testing > .container {
+    display: flex;
+    justify-content: space-around;
+    /*
     display: grid;
     grid-template-columns: 80% 20%;
+    */
+    background-color: #4A5568;
+    color: #FFFFFF;
+}
+
+.testing > .container > .testing-description {
+    margin: 50px 100px 50px 25px;
+}
+
+.testing > .container > .cta {
+    margin: 50px 100px 50px 25px;
+    background-color: #48BB78;
+    border-radius: 5px;
 }
 
 .stories > .container > article {
     display: flex;
 }
 
+.stories > .container > article > .article-body {
+    margin: 20px;
+}
+
+.stories > .container h2 {
+    color: #5A67D8;
+}
+
+.stories > .container > article a {
+    color: #5A67D8;
+}
+
+.stories > .container > article img {
+    border-radius: 50%;
+}
+
+.stories > .container > article h3 {
+    font-size: 18px;
+}
+
 .newsletter > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     text-align: center;
+    background-color: #48BB78;
+    color: #FFFFFF;
+}
+
+.newsletter > .container button {
+    background-color: #5A67D8;
 }
 
 .newsletter > .container > form {
     display: flex;
 }
 
-/*
-Ensure you set appropriate margin/padding values to your design to give the
-    content some room to breathe
-
-
-nav links colour = #6B7280
-nav links hover colour = #5A67D8
-hint try using :hover pseudo selector
-
-Hero overview bg colour = #E2E8F0
-
-h2 in "learn about" text size = 24px
-h2 in "learn about" colour = #48BB78
-
-"learn about" cards border colour = E2E8F0
-corners rounded by 5px
-slight shadow (hint try using box-shadow property)
-
-h3 in card grid for "Learn About":
-colour = #48BB78
-font size = 21px
-
-Covid-19 Testinf Section:
-bg colour = #4A5568
-text colour = white
-link to "Learn more" bg colour = #48BB78
-link to "Learn more" rounded corners = 5px
-
-"Recent Stories":
-main heading and links colour = #5A67D8
-title for each story size = 18px
-circular images (use border-radius)
-
-Newsletter:
-bg colour = #48BB78
-text colour = white
-Subscribe button bg colour = #5A67D8
-
-Footer:
-bg colour = #4A5568
-text colour = white
-*/
+footer > .container {
+    text-align: center;
+    background-color: #4A5568;
+    color: #FFFFFF;
+}
